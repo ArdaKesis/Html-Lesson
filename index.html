@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Arda Keşişoğlu">
+    <meta name="description" content="This page contains all the things that I learned in the first week of the HTML course.">
+
+    <title> My First Web Page </title> <!-- Bu kısım sayfanın başlığını temsil eder. -->
+    
+    <link rel="icon" href="html5.png"
+          type ="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <header>
+        <h1> First time in HTML and my examples</h1> <!-- h1 etiketi, hiyerarşik olarak en önemli başlıktır ve yalnızca bir sayfada bir kez kullanılır. -->
+            <nav aria-label="primary navigation"> <!--normal <nav> yazsa da çalışacaktı. Sadece accesibility sağladık.-->
+                <ul>
+                    <li>
+                        <a href="#Countries">Countries List Example</a>
+                    </li>                             <!--Yol vermiş olduk ve bunları listeledik (nav içindeki anchor ile) ile.-->
+                    <li>
+                        <a href="#Address">Adress Example</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <hr>
+    <h2> This is my first h2 example.</h2> 
+
+    <p> and today, I started to learn HTML. So let me write some li examples:</p>
+    <img src="img/html5.png" alt="HTML5 LOGO" title="Html5 Logo" width="250" height="250" loading="lazy">
+    <!-- foto ekledik (img ve tab ile, geri kalanı foto ayarı).-->
+    <ol>
+        <li>This is the first example.</li>
+        <li>Wow am I seeing a dream, <em>I'm writing HTMLL!!</em></li>
+        <li> Ok that's enough.</li>
+    </ol>
+
+    <hr>
+    <main>  <!--Main kısmı sayfanın ana içeriğini tanımlar.-->
+        <article id="Countries"> <!-- article: makaleler, blog gönderileri, kullanıcı yorumları gibi içerikleri belirtir.-->
+            <h2>Countries that I want to visit before 30</h2>
+            <ul>
+                <li>
+                    <p>England</p>
+                    <section> <!--Section, konu veya tema bazında içerik bölümleri oluşturur.-->
+                        <figure>
+                            <img src="img/London.png" alt="London Bridge" title="Amazing Bridge from London" width="370" height="250">
+                            <figcaption>Fascinated view from London Bridge</figcaption>
+                        </figure>
+                    </section>
+                </li>
+                <li>
+                    <p>Netherlands</p>
+                    <section>
+                        <figure>
+                            <img src="img/Netherlands.jpg" alt="Netherlands photo" title="Great View from Netherlands" width="370" height="250">
+                            <figcaption>Fascinated view from Netherlands</figcaption>
+                        </figure>
+                    </section>
+                </li>
+                <li>
+                    <p>Germany</p>
+                    <section>
+                        <figure>
+                            <img src="img/Germany.png" alt="Germany" title="Germany photo" width="370" height="250">
+                            <figcaption>Fascinated view from Germany</figcaption>
+                        </figure>
+                    </section>
+                </li>
+            </ul>
+        </article>
+        <hr>
+        <aside> <!--Ana içeriğe ek bilgi veya yan içerik sağlar.-->
+            <details> <!-- Belirli bir içeriğin gizlenip gösterilmesini sağlar.Bu öğeye tıklandığında içeriğin tamamı görüntülenir.-->
+                <summary>Guess the <mark>number of hours</mark> I code per day.</summary> <!-- details etiketi içinde özet veya başlık olarak kullanılır.-->
+                <p>I start at 8 am and I write code for <mark>4 hours</mark> every morning.</p>
+            </details>
+        </aside>
+        <br>
+        <table>
+            <caption>My Daily Schedule</caption>
+            <colgroup>
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time datetime="08:00">8 am</time>-<time datetime="12:00">12 pm</time>
+                    </td>
+                    <td>write code</td>
+                </tr>
+                <tr>
+                    <th scope="row">Break</th>
+                    <td>
+                        <time datetime="12:00">12 pm</time>-<time datetime="13:00">1 pm</time>
+                    </td>
+                    <td>eat lunch</td>
+                </tr>
+                <tr>
+                    <th scope="row">Afternoon</th>
+                    <td>
+                        <time datetime="13:00">1 pm</time>-<time datetime="17:00">5 pm</time>
+                    </td>
+                    <td>Study for other courses</td>
+                </tr>
+                <tr>
+                    <th scope="row">Evening</th>
+                    <td rowspan="2">All Other Times</td>
+                    <td>Me Time</td>
+                </tr> 
+                <tr>
+                    <th scope="row">Night</th>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">And that's what I do every week day. Just eat, coding, studying and recharging!</td>
+                </tr>
+            </tfoot>
+        </table>
+            
+        <hr>
+        <h3>Final examples of list types and this called <abbr title="Description List"> Dl</abbr></h3>
+        
+        <dl><!--(Description List)İşlevi: Tanım listesini tanımlar.-->
+            <dt>Basketball is a team sport</dt><!--(Description Term)İşlevi: Tanım listesindeki bir terimi tanımlar.-->
+            <dd>And it increases the chemistry between teammates.</dd><!--(Description Definition)İşlevi: Tanım listesindeki bir terimin tanımını tanımlar.-->
+    
+            <dt>Swimming is an individual sport</dt>
+            <dd>And it's helpful for being responsible because trainings are usually done in the morning.</dd>
+        </dl>
+    
+        <hr>
+        <h3>This is h3 example.</h3>
+        <p>And I'm gonna add some <strong>horizontal line</strong> under these sentences in a minute.</p> 
+    
+        <hr>
+        <h3>In this Header I will make some examples about abbreviations.</h3>
+        <p>As everyone knows, Turkey uses <abbr title="Türk Lirası">TL</abbr> as a currency.</p>
+        <p>For another example, in coding language we use <abbr title="Application Programming Interface">API</abbr> in order to receive or post or update or delete the data from the web browsers.</p> 
+        <hr>
+    
+        <section id="Address">
+            <h2>Address Instance</h2>
+            <address>
+                John Doe<br>
+                123 Main Street<br>
+                New York, NY 10001<br>
+                United States<br>
+                <a href="mailto:john.doe@example.com">john.doe@example.com</a><br>
+                <a href="tel:+12125551234">+1 (212) 555-1234</a>
+            </address>           
+        </section>
+        <hr>
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!!</p>
+
+            <form action="https://httpbin.org/get"
+            method="get">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName"
+                    id="firstName" placeholder="Arda"
+                    required autocomplete="on">
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName"
+                    id="lastName" placeholder="Keşişoğlu"
+                    required autocomplete="on">
+                </p>
+                <p>
+                    <label for="Password">Password: </label>
+                    <input type="password" name="Password"
+                    id="Password" placeholder="*********"
+                    required>
+                </p>
+                <p>
+                    <label for="phone"> Phone:</label>
+                    <input type="tel" name="phone"
+                    id="phone" placeholder="555-555-5555"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+                </p>
+                <p>
+                    <label for="favorite_coffee">Favorite coffees: </label>
+                    <select name="coffee" id="favorite_coffee">
+                        <optgroup label="Coffees">
+                            <option value="regular coffee">Regular Coffee</option>
+                            <option value="iced coffee">Iced Coffee</option>
+                        </optgroup>
+                        <optgroup label="Espresso Drinks">
+                            <option value="americano">Americano</option>
+                            <option value="latte">Latte</option>
+                            <option value="filter coffee">Filter Coffee</option>
+                            <option value="mocha">Mocha</option>
+                            <option value="espresso">Espresso</option>
+                            <option value="cappucino">cappucino</option>
+                            <option value="double shot shaken espresso ">Double Shot Shaken Espresso</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What is your favorite food</legend>
+                <p>
+                    <input type="radio" name="food" id="tacos" value="tacos">
+                    <label for="tacos">Tacos</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="pizza" value="pizza">
+                    <label for="pizza">Pizza</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="cheeseburger" value="cheeseburger">
+                    <label for="cheeseburger">Cheeseburger</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Do you have pets ?</legend>
+                <p>
+                    <input type="checkbox" name="pets" id="dog" value="dog">
+                    <label for="dog">Dog</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="cat" value="cat">
+                    <label for="cat">Cat</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="bird" value="bird">
+                    <label for="bird">Bird</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="fish" value="fish">
+                    <label for="fish">Fish</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send me a note</legend>
+                <label for="message">Your Message: </label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message..."></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+            </form>
+
+        </article>
+    </main>
+    <hr>
+    <footer><!--Sayfanın veya bir bölümün alt bilgi kısmını tanımlar. Telif hakkı bilgisi, yasal uyarılar, iletişim bilgileri gibi içerikleri içerir.-->
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Arda Kesis</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>   
+</body>
+
+</html>
